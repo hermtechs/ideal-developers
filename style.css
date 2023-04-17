@@ -30,13 +30,14 @@ nav{
     color: #fff;
     /* background: #050584; */
     position: relative;
-    margin: 0rem 2rem;
+    text-align: center;
 }
 .nav-links{
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 4.8fr 1fr;
     justify-content: center;
     gap: 1rem;
+    align-items: center;
 }
 .links>*{
     padding-right: 1rem;
@@ -48,6 +49,7 @@ nav h3{
 }
 .nav-bars{
     cursor: pointer;
+    margin-top: 0.6rem;
 }
 .nav-bars span{
     display: block;
@@ -71,9 +73,9 @@ nav h3{
     transform: rotate(45deg);
 }
 .side-menu-links{
-    background:rgba(15, 15, 15,0.8);
+    background:rgba(46, 45, 45, 0.7);
     position: fixed;
-    top: 2.9rem;
+    top: 3rem;
     left: 0;
     right: 0;
     bottom: 0;
