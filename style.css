@@ -1,0 +1,126 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background: #0f0f0f;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* navigation */
+header{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    /* background: #050584; */
+    position: relative;
+    margin: 0rem 2rem;
+}
+.nav-links{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+.links>*{
+    padding-right: 1rem;
+    font-size: 1.1rem;
+}
+
+nav h3{
+    font-size: 1.2rem;
+}
+.nav-bars{
+    cursor: pointer;
+}
+.nav-bars span{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    margin-right: 2.5rem;
+    position: relative;
+    transition: 200ms ease-in;
+}
+.rotate span:nth-child(2){
+    display: none;
+}
+.rotate span:nth-child(1){
+    transform: rotate(-45deg);
+    bottom: -0.3rem;
+}
+
+.rotate span:nth-child(3){
+    transform: rotate(45deg);
+}
+.side-menu-links{
+    background:rgba(15, 15, 15,0.8);
+    position: fixed;
+    top: 2.9rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+    padding-bottom: 2rem;
+}
+/* .side-menu-links{
+    display: none;
+} */
+
+/* navigation */
+.nav-bars{
+    display: none;
+}
+/* toggle on click */
+.show-mobile-menu{
+    transition: 180ms ease-in;
+    transform: translateX(100%);
+}
+.side-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    min-height: 400px;
+}
+
+
+/* media queries */
+@media(max-width:500px){
+    .nav-links{
+        display: none;
+    }
+    .nav-bars{
+        display: block;
+    }
+}
+
+/* make side menu disappear on big screens if open */
+@media(min-width:800px){
+    .side-menu-links{
+    transform: translateX(100%);
+    }
+    
+}
