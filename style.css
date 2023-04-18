@@ -274,6 +274,7 @@ nav h3{
     padding: 2.5rem 2rem;
     border-radius: 0.4rem;
     margin-bottom: 1rem;
+    background: #151515
 }
 .pricing-particulars span{
     display: block;
@@ -288,11 +289,19 @@ nav h3{
     -webkit-text-fill-color: transparent;
     padding-right: 0.5rem;
 }
+.pricing-particulars .apply-btn{
+    all: unset;
+    background: linear-gradient(#26e3c2,#45a0f5);
+    display: grid;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
 .fa-star, .fa-gem{
     background: -webkit-linear-gradient(#45a0f5, #26e3c2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 .titles{
   text-align: center;
