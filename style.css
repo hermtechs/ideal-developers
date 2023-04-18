@@ -19,7 +19,9 @@ body{
 section{
     padding: 2rem 1rem;
 }
-
+section:nth-of-type(1){
+    padding: 0.1rem 1rem;
+}
 /*start of navigation */
 header{
     position: sticky;
@@ -280,8 +282,14 @@ nav h3{
     display: block;
     margin-bottom: 1.5rem;
 }
+.price{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
 .price span{
     display: inline-block;
+    font-size: 1.15rem;
 }
 .pricing-particulars .fa-check{
     background: -webkit-linear-gradient(#45a0f5, #26e3c2);
