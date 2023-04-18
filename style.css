@@ -207,10 +207,10 @@ nav h3{
         font-size: clamp(1.5rem, 2.5vw, 4rem); 
     }
     .hero-img{
-        max-height: 400px;
+        max-height: 380px;
     }
     .hero-img img{
-        max-height: 400px;
+        max-height: 380px;
     }
 }
 
