@@ -16,6 +16,9 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     color: #fff;
 }
+section{
+    padding: 2rem 1rem;
+}
 
 /*start of navigation */
 header{
@@ -24,6 +27,7 @@ header{
     bottom: 0;
     left: 0;
     right: 0;
+    background: #0f0f0f;
 }
 nav{
     display: flex;
@@ -32,7 +36,6 @@ nav{
     padding: 0.5rem 2rem 0.5rem 2rem;
     padding: 1rem 2rem;
     color: #fff;
-    /* background: #050584; */
     position: relative;
     text-align: center;
 }
@@ -251,6 +254,62 @@ nav h3{
     line-height: 1.3;
 }
 /* END OF SERVICES SECTION */
+
+/* START OF PRICING PLANS SECTION */
+.pricing-plan h3, .pricing-plan p{
+    margin-bottom: 1.2rem;
+}
+.pricing-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 300px);
+
+}
+.pricing-plan{
+    max-width: 300px;
+    border: 1px solid #5555;
+    padding: 2.5rem 2rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+.pricing-particulars span{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.price span{
+    display: inline-block;
+}
+.pricing-particulars .fa-check{
+    background: -webkit-linear-gradient(#45a0f5, #26e3c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 0.5rem;
+}
+.fa-star, .fa-gem{
+    background: -webkit-linear-gradient(#45a0f5, #26e3c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.titles{
+  text-align: center;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titles p{
+    padding: 0.5rem;
+    max-width: 600px;
+}
+
+/* END OF PRICING PLANS SECTION */
+
 /* make side menu disappear on big screens if open */
 @media(min-width:800px){
     .side-menu-links{
