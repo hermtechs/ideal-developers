@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+img{
+    max-width: 100%;
+}
 a{
     text-decoration: none;
     color: #fff;
@@ -11,9 +14,10 @@ a{
 body{
     background: #0f0f0f;
     font-family: 'Kumbh Sans', sans-serif;
+    color: #fff;
 }
 
-/* navigation */
+/*start of navigation */
 header{
     position: sticky;
     top: 0;
@@ -90,7 +94,6 @@ nav h3{
     display: none;
 } */
 
-/* navigation */
 .nav-bars{
     display: none;
 }
@@ -107,15 +110,78 @@ nav h3{
     gap: 1rem;
     min-height: 400px;
 }
+.call-to-action{
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    padding: 0.35rem 0.7rem;
+    transition:all 200ms ease-in-out;
+}
+.call-to-action:hover{
+    background: linear-gradient(#15a089,#0a3f70);
+}
+/* end of navigation */
+
+/* landing-page start */
+.landing-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 1.5rem 1rem;
+}
+.hero-img img{
+    max-height: 600px;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+.landing-page .txt{
+    max-width: 600px;
+}
+.landing-page .txt h1{
+   font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+   line-height: 1;
+   padding-bottom: 1rem;
+   background: -webkit-linear-gradient(#45a0f5, #26e3c2);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.landing-page .txt p{
+   font-size: clamp(0.8rem, -1.3rem + 4vw, 1.7rem);
+   line-height: 1.5;
+}
+.accent-txt{
+    color: #45a0f5;
+}
+.accent-txt2{
+    color: #26e3c2;
+
+}
+/* landing-page end */
+
+
+
 
 
 /* media queries */
-@media(max-width:500px){
+@media(max-width:800px){
     .nav-links{
         display: none;
     }
     .nav-bars{
         display: block;
+    }
+    .landing-page{
+        grid-template-columns: 1fr;
+    }
+    .hero-img{
+        order: -1;
+    }
+    .landing-page .txt{
+        max-width: 500px;
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
@@ -123,6 +189,6 @@ nav h3{
 @media(min-width:800px){
     .side-menu-links{
     transform: translateX(100%);
-    }
-    
+    }   
 }
+/* end of media queries */
