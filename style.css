@@ -77,7 +77,7 @@ nav h3{
     transform: rotate(45deg);
 }
 .side-menu-links{
-    background:rgba(46, 45, 45, 0.7);
+    background:rgb(18, 17, 17);
     position: fixed;
     top: 3rem;
     left: 0;
@@ -156,7 +156,22 @@ nav h3{
 }
 .accent-txt2{
     color: #26e3c2;
-
+}
+.btns{
+    margin-top: 1.8rem;
+}
+.apply-btn{
+    background: #ffffff;
+    color:#0f0f0f;
+    padding: 0.4rem 0.7rem; 
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+.learn-more-btn{
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    padding: 0.35rem 0.7rem;
+    transition:all 200ms ease-in-out;
 }
 /* landing-page end */
 
@@ -182,6 +197,20 @@ nav h3{
         max-width: 500px;
         text-align: center;
         margin-top: 2rem;
+        background: rgb(20, 20, 20);
+        padding: 2rem 1rem;
+    }
+    .landing-page .txt p{
+        font-size: clamp(1rem, 2.5vw, 2rem);  
+    }
+    .landing-page .txt h1{
+        font-size: clamp(1.5rem, 2.5vw, 4rem); 
+    }
+    .hero-img{
+        max-height: 400px;
+    }
+    .hero-img img{
+        max-height: 400px;
     }
 }
 
