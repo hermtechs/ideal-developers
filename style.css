@@ -324,7 +324,32 @@ nav h3{
     padding: 0.5rem;
     max-width: 600px;
 }
+.pricing{
+    all: unset;
+}
+.technologies-used{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    gap: 1rem;
+    background: #0a3f70;
+    padding: 1.8rem;
+    position: relative;
+    width: 100%;
+    overflow: scroll;
 
+}
+.technologies-used >*+*{
+    margin-left: 0.8rem;
+}
+/* hide scroll bars on chrome */
+.technologies-used::-webkit-scrollbar {
+    display: none;
+  }
+.technologies-used{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }  
 /* END OF PRICING PLANS SECTION */
 
 /* make side menu disappear on big screens if open */
